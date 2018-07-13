@@ -1,0 +1,10 @@
+body { 
+	background-image: url('marble.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+};
+
+.mySlide{
+	display: none;
+};
+

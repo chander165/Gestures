@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h1 class="w3-center" style ="color:gray; font-family:'Courier New', Courier, monospace;">WHO WE ARE</h1>
+  
+  <hr>
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+      <address>
+        Anh Huynh <br>
+        Email: <a href="mailto:hoanganhhuynh@gmail.com">hoanganhhuynh@utexas.edu</a>.<br> 
+        Github: <a href="https://github.com/hoanganh2006">hoanganh2006</a>.<br>
+        2018 UT Data Science Boot Camp <br>
+      </address>
+    </div>
+    <div class="w3-col m6">
+      <address>
+        Anjali Krishna Vengayil <br>
+        Email: <a href="mailto:anjali.vengayil@gmail.com">anjali.vengayil@gmail.com</a>.<br> 
+        Github: <a href="hhttps://github.com/anjali-krishna">anjali-krishna</a>.<br>
+        2018 UT Data Science Boot Camp <br>
+      </address>
+    </div>
+ 	<br>
+    <div class="w3-col m6">
+      <address>
+        Jeanette Ilongo <br>
+        Email: <a href="mailto:hoanganhhuynh@gmail.com">hoanganhhuynh@utexas.edu</a>.<br> 
+        Github: <a href="https://github.com/jmi398">jmi398</a>.<br>
+        2018 UT Data Science Boot Camp <br>
+      </address>
+    </div>
+    <div class="w3-col m6">
+        <address>
+        Chander Viswanathan <br>
+        Email: <a href="mailto:chander165@gmail.com">chander165@gmail.com</a>.<br> 
+        Github: <a href="https://github.com/chander165">chander165</a>.<br>
+        2018 UT Data Science Boot Camp <br>
+        </address>
+    </div>
+ </div>
+ <!-- Contact -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h1 class="w3-wide w3-center" style ="color:gray; font-family:'Courier New', Courier, monospace;">CONTACT</h1>
+    <p class="w3-opacity w3-center"><i >If you have any questions about registration for class or question about the certificate</i></p>
+    <div class="w3-row w3-padding-large">
+      <div class="w3-col m6 w3-large w3-margin-bottom w3-center">
+        <i class="fa fa-map-marker" style="color: gray"></i> Joe C Thompson Conference Center, Austin, TX 78712<br>
+        <i class="fa fa-phone" style="color: gray"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="color: gray"> </i> Email: ASL@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        {% from "includes/_formhelpers.html" import render_field %}
+        <form method = "POST" action = "">
+          <div class="w3-row-padding" style="margin:0 -10px 8px -16px">
+            <div class="form-group w3-half">
+              {{render_field(form.guest_name, class_="form-control")}}
+            </div>
+            <div class="form-group w3-half">
+              {{render_field(form.guest_email, class_="form-control")}}
+            </div>
+            <div class="form-group">
+              {{render_field(form.guest_message, class_="form-control", id="editor") }}
+            </div>
+            <p><input class="btn btn-primary" type="submit" value="Send">
+            </p>
+          </div>
+          </form>
+      </div>
+
+{% endblock %}

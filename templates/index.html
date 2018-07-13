@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class = 'jumbotron text-center'>
+	<h1>WELCOME TO AMERICAN SIGN LANGUAGE EDUCATION CENTER </h1>
+	<p class = 'lead'> Our mission is to provide education that is easy to access for people who interesting in learning American sign language. We provided different courses and certificates that people can sign-up, take classes and get certify. We also provide free beginner course for people with disability.</p>
+</div>
+	<div class = "w3-content">
+		<div class  = "mySlides w3-display-container w3-center">
+			<img src = "{{url_for('static', filename = 'styles/ASL2014.jpg')}}",  style = "width:100%;">
+		</div>
+		<div class  = "mySlides w3-display-container w3-center">
+			<img src = "{{url_for('static', filename = 'styles/asl_program_2.jpg')}}",  style = "width:100%;">
+		</div>
+		<div class  = "mySlides w3-display-container w3-center">
+			<img src = "{{url_for('static', filename = 'styles/img_9145.jpeg')}}",  style = "width:100%;">
+		</div>
+	</div>
+	<div class = "w3-row w3-padding-64" id = "mission"> 
+		<div class = "w3-col m6 w3-padding-large w3-hide-small"> 
+			<!-- <iframe width = "500" height = "320" src = "https://www.youtube.com/embed/Raa0vBXA8OQ"></iframe> -->
+			<iframe src="https://emailcpcc-my.sharepoint.com/personal/chander0_email_cpcc_edu/_layouts/15/Doc.aspx?sourcedoc={ae5b6b36-f67b-46a8-90d2-56fb0ab2f94e}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="500px"; height="300px" ;" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+		</div>
+		<div class = "w3-col m6 w3-padding-large">
+			<h1 class = "w3-center" style="color: gray;">Our Mission</h1><br>
+			<p class = "w3-large" style = "color: gray; text-align: justify;">Our mission is to provide free and accessible education for people who interesting in learning American sign language. With our technology, we are confident in provide the best learning experience. We provided different courses and certificates that people can sign-up, take classes and get certify. We also provide free beginner course for people with disability. </p>
+		</div>
+	</div>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium"><a href="https://github.com/hoanganh2006/Project_3" target="_blank">@2018 UT Data Analytics and Visualization Boot Camp </a></p>
+</footer>
+{% endblock %}

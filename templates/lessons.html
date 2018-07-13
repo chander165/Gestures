@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block body %}
+	<h1>Lessons</h1>
+	<ul class = 'list-group'>
+	{% for lesson in lessons %}
+		<li class = 'list-group-item'><a href = 'lesson/{{lesson.id}}'>{{lesson.title}}</a></li>
+	{% endfor %}
+	<div class="container">
+		<img class="img-fluid" src="/video_feed">
+	</div>
+{% endblock %}
